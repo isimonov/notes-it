@@ -1,4 +1,4 @@
-# CTE
+CTE (Common Table Expressions) - обобщённые табличные выражения
 
 ```sql
 WITH t as (
