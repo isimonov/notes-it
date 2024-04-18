@@ -138,19 +138,19 @@ ExecutorService service2 = Executors.newCachedThreadPool();
 ExecutorService service4 = Executors.newScheduledThreadPool(3);
 ```
 
-### FixedThreadPool
+### fixedThreadPool
 
-*FixedThreadPool* - обычный фиксированный пул потоков.
+*fixedThreadPool* - обычный фиксированный пул потоков.
 
-### SingleThreadExecutor
+### singleThreadExecutor
 
 - Сервис выполняет за раз только одну задачу.
 - Если мы отправляем N задач на исполнение, все N задач одна за другой будет выполняться одним потоком.
 - Если поток будет прерван, то создастся новый поток для выполнения остальных задач.
 
-### Cached Thread Executor
+### cachedThreadExecutor
 
-*Cached Thread Executor* - кэширует потоки, отсюда и название. Он держит активными (но не используемыми) потоки в течение ограниченного количества времени, для того чтобы использовать эти потоки для выполнения новых задач.
+*cachedThreadExecutor* - кэширует потоки, отсюда и название. Он держит активными (но не используемыми) потоки в течение ограниченного количества времени, для того чтобы использовать эти потоки для выполнения новых задач.
 
 ```java
 public static ExecutorService newCachedThreadPool() {
