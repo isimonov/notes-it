@@ -1,0 +1,13 @@
+- Stream API: map, peek, flatMap
+- Функциональный интерфейс: Predicate, Consumer, Supplier, Function, BiFunction, UnaryOperator
+- Задача с вариантностью
+- Блоки инициализации
+- Абстрактный класс и интерфейс, в чём отличия
+- Как создать иммутабельный класс
+- Как работает ArrayList, как работает HashMap, TreeMap
+- Дженерики, вариантность
+- Effectively Final переменные и лямбды
+- Equals и hashCode (hashCode равны, если equals, но если равны hashCode не обязательно equals)
+- Шаблоны проектирования GoF
+- Многопоточность
+	- volatile и synchronized
