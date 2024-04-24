@@ -13,3 +13,4 @@
 	- volatile и synchronized
 - Kafka, RabbitMQ, чем различаются
 - Что происходит после старта SprinngBoot приложения, как происходит под капотом обработка входящего HTTP-запроса
+- Способы управления транзакциями в Spring: @Transactional, transactionTemplate = new TransactionTemplate(transactionManager)
