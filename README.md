@@ -10,3 +10,5 @@
 - [ ] weak refferance GC WeakHashMap
 - [ ] Архитектура
 - [ ] Голы в Мавне
+- [ ] spring жизненный цикл
+- [ ] DB индексы
