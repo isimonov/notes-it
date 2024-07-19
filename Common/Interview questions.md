@@ -13,7 +13,7 @@
 - Блокировки: оптимистичные и пессимистичные
 - SQL
 	- LEFT/RIGHT OUTER JOIN & INNER JOIN
-	- SELECT COUT(1) FROM users u GROUP BY u.surname HAVING COUT(1) > 1
+	- `SELECT u.surname, GROUP_CONCAT(u.id), COUT(1) FROM users u GROUP BY u.surname HAVING COUT(1) > 1`
 	- [[CTE]] (Common Table Expressions)
 - [[Транзакции]]
 	- Уровни изоляции
@@ -34,7 +34,6 @@
 - Nginx
 - TLS - transport layer security
 - что происходит когда вводишь HTP запрос 
-
 
 # Java
 - String vs StringBulder vs StringBuffer
