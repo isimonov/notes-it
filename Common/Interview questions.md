@@ -33,7 +33,7 @@
 - REST vs SOAP: OpenAPI (Swagger), WSDL (XSD)
 - Nginx
 - TLS - transport layer security
-- что происходит когда вводишь HTP запрос 
+- что происходит когда вводишь HTTP запрос 
 
 # Java
 - String vs StringBulder vs StringBuffer
