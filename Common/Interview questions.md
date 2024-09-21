@@ -69,14 +69,16 @@
 	- spring-boot-starter-test
 	- spring-boot-starter-web - Spring vs Spring Boot, что такое сервлет, контейнер сервлетов, сервер приложений
 	- spring-boot-starter-actuator - prometeus
-- Logginng
-- @EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class)
+- Логирование в спринг SLF4J, Logback, трассировка логов, MDC.
+- Свой стартер: @EnableAutoConfiguration(exclude = DataSourceAutoConfiguration.class)
 - Register a Custom Auto-Configuration _META-INF/spring.factories_ org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.baeldung.autoconfigure.CustomAutoConfiguration
-- Тестирование: интеграционные и модульные тесты
-- How to Change the Default Port in Spring Boot?
-- Which Embedded Servers Does Spring Boot Support, and How to Change the Default? Spring MVC supports Tomcat, Jetty, and Undertow. 
+- Тестирование: интеграционные и модульные тесты. Компоненты spring-boot-starter-test: JUnit, Mockito и отдельно библиотеку утверждений: AssertJ, Hamcrest, JsonPath
+- Как поменять порт по умолчанию в Spring Boot?
+- Какие встроенные сервера поддерживает Spring Boot,и как изменить используемый по умолчанию? Spring MVC поддерживает Tomcat, Jetty, and Undertow. 
 - Профили: возможность поделить конфигурацию на части
 - Что происходит после старта SprinngBoot приложения, как происходит под капотом обработка входящего HTTP-запроса
+- Как устроен механизм проксирования бинов в Spring. Spring AOP использует _JDK dynamic proxies_ (если есть интерфейс) или _CGLIB_ (если интерфейса нет).
+- BOM
 
 # Docker & k8s
 
