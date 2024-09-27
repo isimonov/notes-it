@@ -57,7 +57,7 @@
 	- `java.util.concurrent`: Atomics, Concurrent Collections, Executors, Locks, Queues, Synchronizers
 	- `volatile` и `synchronized`
 	- wait notify notifyall
-
+- Исключения unchecked `RuntimeException` и `Error`, остальные checked
 # Spring Boot
 
 - Starters:
@@ -79,6 +79,7 @@
 - Что происходит после старта SprinngBoot приложения, как происходит под капотом обработка входящего HTTP-запроса
 - Как устроен механизм проксирования бинов в Spring. Spring AOP использует _JDK dynamic proxies_ (если есть интерфейс) или _CGLIB_ (если интерфейса нет).
 - BOM
+- Области видимости бинов: singleton, prototype, request, session, global-session
 
 # Docker & k8s
 
