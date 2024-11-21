@@ -34,9 +34,12 @@
 - Nginx
 - TLS - transport layer security
 - что происходит когда вводишь HTTP запрос 
+- статус-коды
+	- 401 Unauthorized:
+	- 403 Forbidden
+	- с каким кодом обрабатывать бизнес-ошибки?
 
 # Java
-- String vs StringBulder vs StringBuffer
 - Принципы ООП: полиморфизм, наследование, инкапсуляция и абстракция
 	- Задача на полиморфизм
 - Stream API: `map`, `peek`, `flatMap`
@@ -45,7 +48,7 @@
 - Абстрактный класс и [[Интерфейс]], в чём отличия
 - [[Immutable]] класс: `Integer`, `Byte`, `Character`, `Short`, `Boolean`, `Long`, `Double`, `Float`, `BigInteger` и `BigDecimal`, `Collections.unmodifiableList`
 - Как работает `ArrayList`, `HashMap`, `TreeMap`
-- Дженерики, [[Вариантность]]
+- Дженерики, [[Вариантность]], инвариантность коллекций и ковариантность массивов
 - [[Effectively Final лямбды]] переменные и лямбды
 - [[Equals hashCode]] (hashCode равны, если equals, но если равны hashCode не обязательно equals)
 - Шаблоны проектирования GoF
@@ -53,11 +56,23 @@
 	- **Структурные**: Адаптер (Adapter), Мост (Bridge), Компоновщик (Composite), Декоратор (Decorator), Фасад (Facade), Приспособленец (Flyweight), Заместитель (Proxy)
 	- **Поведенческие**: Цепочка обязанностей (Chain of responsibility), Команда (Command), Интерпретатор (Interpreter), Итератор (Iterator), Посредник (Mediator), Хранитель (Memento), Наблюдатель (Observer), Состояние (State), Стратегия (Strategy), Шаблонный метод (Template method), Посетитель (Visitor)
 - Многопоточность
+	- Чем процесс отличается от потока
 	- что такое монитор объекта
 	- `java.util.concurrent`: Atomics, Concurrent Collections, Executors, Locks, Queues, Synchronizers
 	- `volatile` и `synchronized`
-	- wait notify notifyall
-- Исключения unchecked `RuntimeException` и `Error`, остальные checked
+	- `wait`, `notify`, `notifyall`
+	- Platform Threads (1:1) vs Green Threads before 1.2 (M:1) and Virtual Threads (M:M)
+	- `ThreadLocal`, `ThreadLocalRandom`
+- Мониторинг 
+	- `VisualVM`, `JConsole`, `JProfiler`
+	- Трейсинг логов, `MDC`, `Logback`/`Slf4`
+	- Прометей и метрики `Micrometer` `gauge` and `counter`, `tags`
+	- `JMX` (Java Management Extensions), `MBean`
+- `String` vs `StringBulder` vs `StringBuffer`
+- Исключения *unchecked* `RuntimeException` и `Error`, остальные *checked*
+- `Iterator` и `Spliterator`
+- `java.time`
+- Рефлексия
 # Spring Boot
 
 - Starters:
@@ -79,7 +94,7 @@
 - Что происходит после старта SprinngBoot приложения, как происходит под капотом обработка входящего HTTP-запроса
 - Как устроен механизм проксирования бинов в Spring. Spring AOP использует _JDK dynamic proxies_ (если есть интерфейс) или _CGLIB_ (если интерфейса нет).
 - BOM
-- Области видимости бинов: singleton, prototype, request, session, global-session
+- Scope бинов: singleton, prototype, request, session, global-session
 
 # Docker & k8s
 
