@@ -10,3 +10,12 @@
 |---------|-------------|
 | `chown -R root:root *` | Changes the owner and group for all subfolders |
 | `chmod -R 755 *` | Changes the access rights for all subfolders |
+
+# Used disk space
+
+```shell
+df -h
+du -hd 1 /
+
+ncdu /
+```

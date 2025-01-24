@@ -29,6 +29,11 @@ https://www.cryptopro.ru/forum2/default.aspx?g=posts&t=15507<br />
 
 Keys directory: /var/opt/cprocsp/keys/root or %userprofile%\AppData\Local\Crypto Pro\
 
+# Catalogs
+
+${user.home}\Local Settings\Application Data\Crypto Pro
+/var/opt/cprocsp/keys/root
+
 # SMEV Adapter
 
 After install SMEV Adapter need add to Java 8 ext directory /usr/lib/jvm/jre/lib/ext files xmlsec-1.4.5.jar and commons-logging-1.2.jar This need for correct singn working.
